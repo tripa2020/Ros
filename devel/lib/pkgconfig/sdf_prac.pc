@@ -1,0 +1,8 @@
+prefix=/home/alex/catkin_ws/devel
+
+Name: sdf_prac
+Description: Description of sdf_prac
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: gazebo_ros roscpp rospy
