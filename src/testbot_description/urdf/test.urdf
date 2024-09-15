@@ -3,37 +3,33 @@
 
   <link name="world"/>
 
-    <link name="link0">
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <box size="1 1 1"/>
-      </geometry>
-    </collision>
-
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <box size="1 1 1"/>
-      </geometry>
-    </visual>
-
+  <link name="link0">
     <inertial>
       <origin xyz="0 0 0.5" rpy="0 0 0"/>
       <mass value="1"/>
-      <inertia>
-        <ixx>0.083</ixx>
-        <ixy>0.0</ixy>
-        <ixz>0.0</ixz>
-        <iyy>0.083</iyy>
-        <iyz>0.0</iyz>
-        <izz>0.083</izz>
-      </inertia>
+      <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
     </inertial>
+ 
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="1 1 1" />
+      </geometry>
+      <material name="Cyan">
+        <color rgba="0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+ 
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="1" length="0.5"/>
+      </geometry>
+    </collision>
   </link>
 
 
-    <link name="link1">
+    <!-- <link name="link1">
       <collision>
         <origin xyz="0 0 .02" rpy="0 0 0"/>
         <geometry>
@@ -58,7 +54,7 @@
       </inertial>
 
 
-    </link>
+    </link> -->
     <!-- <link name="link2" />
     <link name="link3" /> -->
 
@@ -67,12 +63,12 @@
       <child link="link0"/>
     </joint> 
     
-    <joint name="joint1" type="continuous">
+    <!-- <joint name="joint1" type="continuous">
       <parent link="link0"/>
       <child link="link1"/>
       <origin xyz="0 0 .02" rpy="0 0 0" />
       <axis xyz="1 0 0" />
-    </joint>
+    </joint> -->
 
     <!-- <joint name="joint2" type="continuous">
       <parent link="link1"/>

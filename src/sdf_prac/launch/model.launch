@@ -21,10 +21,10 @@
     <arg name="paused" value="$(arg paused)" />
     <!-- <arg name="extra_gazebo_args" value="$(arg extra_gazebo_args)" /> -->
     <param name="robot_description"
-    command="-file $(find robot_description)/models/box.sdf" />
+    command="-file $(find testbot_description)/urdf/test.urdf" />
 
   </include>
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" 
-  args="-file $(find robot_description)/models/box.sdf -sdf -model model" />
+  args="-file $(find testbot_description)/urdf/test.urdf -urdf -model test" />
   </launch>
   

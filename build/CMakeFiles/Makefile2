@@ -67,7 +67,6 @@ all: gazebo_ros_demos/gazebo_tutorials/all
 all: sdf_prac/all
 all: gazebo_ros_pkgs/gazebo_plugins/all
 all: gazebo_ros_pkgs/gazebo_ros_control/all
-all: model_control/all
 all: test_description/all
 all: testbot_description/all
 
@@ -88,7 +87,6 @@ preinstall: gazebo_ros_demos/gazebo_tutorials/preinstall
 preinstall: sdf_prac/preinstall
 preinstall: gazebo_ros_pkgs/gazebo_plugins/preinstall
 preinstall: gazebo_ros_pkgs/gazebo_ros_control/preinstall
-preinstall: model_control/preinstall
 preinstall: test_description/preinstall
 preinstall: testbot_description/preinstall
 
@@ -114,7 +112,6 @@ clean: gazebo_ros_demos/gazebo_tutorials/clean
 clean: sdf_prac/clean
 clean: gazebo_ros_pkgs/gazebo_plugins/clean
 clean: gazebo_ros_pkgs/gazebo_ros_control/clean
-clean: model_control/clean
 clean: test_description/clean
 clean: testbot_description/clean
 
@@ -664,24 +661,6 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
-
-#=============================================================================
-# Directory level rules for directory model_control
-
-# Recursive "all" directory target.
-model_control/all:
-
-.PHONY : model_control/all
-
-# Recursive "preinstall" directory target.
-model_control/preinstall:
-
-.PHONY : model_control/preinstall
-
-# Recursive "clean" directory target.
-model_control/clean:
-
-.PHONY : model_control/clean
 
 #=============================================================================
 # Directory level rules for directory robot_description

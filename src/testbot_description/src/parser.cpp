@@ -1,16 +1,16 @@
 #include <urdf/model.h>
 #include "ros/ros.h"
 #include "iostream"
+#include <ros/package.h>
 
 int main(int argc, char** argv){
   ros::init(argc, argv, "my_parser");
 
-  if (argc != 1){
-    ROS_ERROR("Need a urdf file as argument");
-    return -1;
-  }
-  std::string urdf_file = "/testbot_description/urdf/test.urdf";
-  std::cout << urdf_file << std::endl;
+  // if (argc ){
+  //   ROS_ERROR("Need a urdf file as argument");
+  //   return -1;
+  // }
+  std::string urdf_file = argv[1];
 
   urdf::Model model;
   if (!model.initFile(urdf_file)){
