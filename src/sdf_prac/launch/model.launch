@@ -1,7 +1,5 @@
 <launch>
-  <!--Add Gazebo model path-->
-  <!-- <param name="robot_description" command="cat $(find testbot_description)/urdf/test.urdf" />
-  <env name = "GAZEBO_MODEL_PATH" value="$(find testbot_description)/urdf"/> -->
+  
   <!--Add Gazebo variables-->
   <arg name="paused" default="false" />
   <arg name="headless" default="false" />
@@ -23,8 +21,23 @@
     <param name="robot_description"
     command="-file $(find testbot_description)/urdf/test.urdf" />
 
+
+
   </include>
+  
+  
+
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" 
   args="-file $(find testbot_description)/urdf/test.urdf -urdf -model test" />
-  </launch>
+  
+  <!-- <include file="-file $(find testbot_control)/launch/testbot_control.launch"/> -->
+
+
+
+
+</launch>
+
+
+
+
   

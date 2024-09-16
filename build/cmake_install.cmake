@@ -144,7 +144,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/alex/catkin_ws/build/sdf_prac/cmake_install.cmake")
   include("/home/alex/catkin_ws/build/gazebo_ros_pkgs/gazebo_plugins/cmake_install.cmake")
   include("/home/alex/catkin_ws/build/gazebo_ros_pkgs/gazebo_ros_control/cmake_install.cmake")
-  include("/home/alex/catkin_ws/build/test_description/cmake_install.cmake")
+  include("/home/alex/catkin_ws/build/testbot_control/cmake_install.cmake")
   include("/home/alex/catkin_ws/build/testbot_description/cmake_install.cmake")
 
 endif()

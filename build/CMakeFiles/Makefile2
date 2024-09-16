@@ -67,7 +67,7 @@ all: gazebo_ros_demos/gazebo_tutorials/all
 all: sdf_prac/all
 all: gazebo_ros_pkgs/gazebo_plugins/all
 all: gazebo_ros_pkgs/gazebo_ros_control/all
-all: test_description/all
+all: testbot_control/all
 all: testbot_description/all
 
 .PHONY : all
@@ -87,7 +87,7 @@ preinstall: gazebo_ros_demos/gazebo_tutorials/preinstall
 preinstall: sdf_prac/preinstall
 preinstall: gazebo_ros_pkgs/gazebo_plugins/preinstall
 preinstall: gazebo_ros_pkgs/gazebo_ros_control/preinstall
-preinstall: test_description/preinstall
+preinstall: testbot_control/preinstall
 preinstall: testbot_description/preinstall
 
 .PHONY : preinstall
@@ -112,7 +112,7 @@ clean: gazebo_ros_demos/gazebo_tutorials/clean
 clean: sdf_prac/clean
 clean: gazebo_ros_pkgs/gazebo_plugins/clean
 clean: gazebo_ros_pkgs/gazebo_ros_control/clean
-clean: test_description/clean
+clean: testbot_control/clean
 clean: testbot_description/clean
 
 .PHONY : clean
@@ -699,22 +699,22 @@ sdf_prac/clean:
 .PHONY : sdf_prac/clean
 
 #=============================================================================
-# Directory level rules for directory test_description
+# Directory level rules for directory testbot_control
 
 # Recursive "all" directory target.
-test_description/all:
+testbot_control/all:
 
-.PHONY : test_description/all
+.PHONY : testbot_control/all
 
 # Recursive "preinstall" directory target.
-test_description/preinstall:
+testbot_control/preinstall:
 
-.PHONY : test_description/preinstall
+.PHONY : testbot_control/preinstall
 
 # Recursive "clean" directory target.
-test_description/clean:
+testbot_control/clean:
 
-.PHONY : test_description/clean
+.PHONY : testbot_control/clean
 
 #=============================================================================
 # Directory level rules for directory testbot_description
